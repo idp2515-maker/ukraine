@@ -1,1 +1,81 @@
+const burgerBtn = document.querySelector("#burgerBtn");
+const navMenu = document.querySelector("#navMenu");
 
+burgerBtn.addEventListener("click", () => {
+  const isExpanded = burgerBtn.getAttribute("aria-expanded") === "true";
+  burgerBtn.setAttribute("aria-expanded", String(!isExpanded));
+  burgerBtn.setAttribute("aria-label", isExpanded ? "Відкрити меню" : "Закрити меню");
+  navMenu.classList.toggle("is-open", !isExpanded);
+});
+
+navMenu.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    burgerBtn.setAttribute("aria-expanded", "false");
+    burgerBtn.setAttribute("aria-label", "Відкрити меню");
+    navMenu.classList.remove("is-open");
+  });
+});
+
+const lightboxModal = document.querySelector("#lightboxModal");
+const lightboxImg = document.querySelector("#lightboxImg");
+const lightboxClose = document.querySelector("#lightboxClose");
+let lastFocusedElement;
+
+function closeLightbox() {
+  lightboxModal.classList.remove("is-open");
+  lightboxModal.setAttribute("aria-hidden", "true");
+  lightboxImg.removeAttribute("src");
+  document.body.classList.remove("modal-open");
+  lastFocusedElement?.focus();
+}
+
+document.querySelectorAll(".gallery-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    lastFocusedElement = item;
+    lightboxImg.src = item.dataset.full;
+    lightboxImg.alt = item.querySelector("img").alt;
+    lightboxModal.classList.add("is-open");
+    lightboxModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    lightboxClose.focus();
+  });
+});
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightboxModal.addEventListener("click", (event) => {
+  if (event.target === lightboxModal) closeLightbox();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lightboxModal.classList.contains("is-open")) {
+    closeLightbox();
+  }
+});
+
+const backToTop = document.querySelector("#backToTop");
+window.addEventListener("scroll", () => {
+  backToTop.classList.toggle("is-visible", window.scrollY > 500);
+}, { passive: true });
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+function handleDemoForm(form, feedback, successMessage) {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    feedback.textContent = successMessage;
+    form.reset();
+  });
+}
+
+handleDemoForm(
+  document.querySelector("#contactForm"),
+  document.querySelector("#contactFeedback"),
+  "Дякуємо! Це демо — повідомлення не було надіслано."
+);
+handleDemoForm(
+  document.querySelector("#newsletterForm"),
+  document.querySelector("#newsletterFeedback"),
+  "Дякуємо за інтерес! Демо-підписку не збережено."
+);
