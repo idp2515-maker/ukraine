@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Відкрийте для себе маршрути, міста й природні дива України."
+    />
+    <meta name="theme-color" content="#f7f5ef" />
+    <title>Мандруй Україною — подорожі, що надихають</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top">
+        <div class="container header-top-content">
+          <span>Мандруй ближче. Відкривай більше.</span>
+          <a href="#contacts">Плануєш маршрут? Напиши нам <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="container header-main">
+        <a href="#home" class="logo" aria-label="Мандруй Україною — на головну">
+          <span class="logo-mark" aria-hidden="true">м.</span>
+          <span>мандруй<span class="logo-accent">.</span></span>
+        </a>
+        <button
+          class="burger-btn"
+          id="burgerBtn"
+          type="button"
+          aria-label="Відкрити меню"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="nav-menu" id="navMenu" aria-label="Головна навігація">
+          <a href="#about">Про нас</a>
+          <a href="#categories">Напрямки</a>
+          <a href="#information">Планування</a>
+          <a href="#gallery">Галерея</a>
+          <a class="nav-contact" href="#contacts">Контакти <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-image" role="img" aria-label="Гірський краєвид українських Карпат"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <span class="eyebrow eyebrow-light"><span></span> Твоя наступна пригода — поруч</span>
+            <h1>Україна,<br />яку <em>відчуваєш.</em></h1>
+            <p>Від гірських світанків до тихих вуличок старих міст. Знайди свій маршрут і вирушай назустріч новому.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#categories">Обрати напрямок <span aria-hidden="true">↗</span></a>
+              <a class="text-link text-link-light" href="#about">Наша історія <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <div class="hero-note"><span class="hero-note-line"></span><span>48° 30′ N &nbsp; 32° 10′ E</span></div>
+          <a class="hero-scroll" href="#about" aria-label="Прокрутити до розділу Про нас">Гортай вниз <span>↓</span></a>
+        </div>
+        <div class="hero-index"><span>01</span> / 05</div>
+      </section>
+
+      <section class="statistics" aria-label="Мандруй Україною у цифрах">
+        <div class="container statistics-grid">
+          <div class="stat-item"><strong>24</strong><span>області для відкриттів</span></div>
+          <div class="stat-item"><strong>1 500<span>+</span></strong><span>кілометрів натхнення</span></div>
+          <div class="stat-item"><strong>365</strong><span>днів для нових вражень</span></div>
+          <p>Найкраща подорож<br />починається з цікавості.</p>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="about-image image-frame">
+            <img
+              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85"
+              alt="Гірське озеро серед зелених схилів"
+              loading="lazy"
+            />
+            <span class="image-caption">Карпати · ранок, який запам'ятаєш</span>
+            <span class="image-number">01 — 04</span>
+          </div>
+          <div class="about-content">
+            <span class="eyebrow"><span></span> Трохи ближче до свого</span>
+            <h2>Великі відкриття<br />починаються <em>вдома.</em></h2>
+            <p class="lead">Ми віримо, що подорож — це не відстань на карті. Це відчуття, коли зупиняєшся, дивишся навколо й думаєш: «Як же тут красиво».</p>
+            <p>«Мандруй» збирає маршрути, місця й маленькі підказки, щоб знайомство з Україною було простим, щирим і твоїм. Обирай темп, бери близьких і вирушай.</p>
+            <a class="text-link" href="#timeline">Як усе починалось <span aria-hidden="true">↗</span></a>
+            <div class="signature"><span class="signature-mark">м.</span><span>З любов'ю до місць,<br />у яких хочеться залишитись.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section categories" id="categories">
+        <div class="container">
+          <div class="section-header section-header-row">
+            <div>
+              <span class="eyebrow"><span></span> Куди цього разу?</span>
+              <h2>Обирай свій <em>напрямок.</em></h2>
+            </div>
+            <p>Кожна частина України має свій характер. Який відгукується тобі?</p>
+          </div>
+          <div class="category-grid">
+            <a class="category-card category-large" href="#information">
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85" alt="Вершини Карпат у ранковому світлі" loading="lazy" />
+              <span class="category-count">01 / ВИСОТИ</span>
+              <span class="category-copy"><span>Дихай на повні груди</span><strong>Карпати <span>↗</span></strong></span>
+            </a>
+            <a class="category-card" href="#information">
+              <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85" alt="Зоряне небо над горами" loading="lazy" />
+              <span class="category-count">02 / ТИША</span>
+              <span class="category-copy"><span>Знайди свій спокій</span><strong>Природа <span>↗</span></strong></span>
+            </a>
+            <a class="category-card" href="#information">
+              <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=85" alt="Архітектура старого європейського міста" loading="lazy" />
+              <span class="category-count">03 / МІСТА</span>
+              <span class="category-copy"><span>Вулиці з історією</span><strong>Міські мандри <span>↗</span></strong></span>
+            </a>
+            <a class="category-card category-wide" href="#information">
+              <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=85" alt="Сонце сходить над широким полем" loading="lazy" />
+              <span class="category-count">04 / ПРОСТІР</span>
+              <span class="category-copy"><span>Дорога без поспіху</span><strong>Відкриті простори <span>↗</span></strong></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured">
+        <div class="container featured-grid">
+          <div class="featured-image">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1100&q=85" alt="Мандрівник милується гірським краєвидом" loading="lazy" />
+            <span class="featured-stamp">мандрівка<br />№ 001</span>
+          </div>
+          <div class="featured-content">
+            <span class="eyebrow eyebrow-light"><span></span> Маршрут місяця</span>
+            <h2>Там, де гори<br />торкаються <em>неба.</em></h2>
+            <p>Підйом на Говерлу — більше, ніж позначка у списку. Це свіже повітря, мінливе небо й краєвид, заради якого варто прокинутися вдосвіта.</p>
+            <div class="route-meta">
+              <div><span>ТРИВАЛІСТЬ</span><strong>1–2 дні</strong></div>
+              <div><span>СКЛАДНІСТЬ</span><strong>Помірна</strong></div>
+              <div><span>СТАРТ</span><strong>Заросляк</strong></div>
+            </div>
+            <a class="button button-outline" href="#information">Дізнатись більше <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section items">
+        <div class="container">
+          <div class="section-header section-header-row">
+            <div>
+              <span class="eyebrow"><span></span> Ідеї для вихідних</span>
+              <h2>Маленька втеча,<br />велика <em>радість.</em></h2>
+            </div>
+            <a class="text-link" href="#gallery">Усі історії <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="items-grid">
+            <article class="trip-card">
+              <a class="trip-image" href="#gallery" aria-label="Переглянути галерею Карпат">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=85" alt="Озеро в горах, оточене лісом" loading="lazy" />
+                <span class="trip-tag">ПРИРОДА</span><span class="trip-arrow" aria-hidden="true">↗</span>
+              </a>
+              <div class="trip-info"><span>Івано-Франківщина · 2 дні</span><h3>Наодинці з горами</h3><p>Стежки, смерековий ліс і ранок без будильника.</p></div>
+            </article>
+            <article class="trip-card">
+              <a class="trip-image" href="#gallery" aria-label="Переглянути галерею Львова">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85" alt="Затишний ресторан у старовинному місті" loading="lazy" />
+                <span class="trip-tag">МІСТО</span><span class="trip-arrow" aria-hidden="true">↗</span>
+              </a>
+              <div class="trip-info"><span>Львів · 1 день</span><h3>Місто на смак</h3><p>Загубись у вуличках і знайди улюблену кав'ярню.</p></div>
+            </article>
+            <article class="trip-card">
+              <a class="trip-image" href="#gallery" aria-label="Переглянути галерею Поділля">
+                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85" alt="Сонячний краєвид над річковою долиною" loading="lazy" />
+                <span class="trip-tag">ВІДКРИТТЯ</span><span class="trip-arrow" aria-hidden="true">↗</span>
+              </a>
+              <div class="trip-info"><span>Поділля · 2 дні</span><h3>Стежками каньйону</h3><p>Вода, скелі й краєвиди, що змінюються за кожним поворотом.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-section">
+        <div class="container quote">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>Не важливо, куди веде дорога.<br />Важливо, <em>що ти відчуваєш у дорозі.</em></blockquote>
+          <div class="quote-author"><span></span><span>Нотатки мандрівника<br /><strong>Україна, 2025</strong></span></div>
+          <span class="quote-decoration" aria-hidden="true">МАНДРУЙ</span>
+        </div>
+      </section>
+
+      <section class="section information" id="information">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow"><span></span> Зручна шпаргалка</span>
+            <h2>Трохи планування —<br /><em>більше пригод.</em></h2>
+            <p>Кілька ідей, щоб обрати формат подорожі під свій настрій і час.</p>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead><tr><th>Напрямок</th><th>Що побачити</th><th>Скільки часу</th><th>Для кого</th><th></th></tr></thead>
+              <tbody>
+                <tr><td><span class="table-dot dot-green"></span> Карпати</td><td>Говерла, полонини, водоспади</td><td>2–4 дні</td><td>Любителі активного відпочинку</td><td><a href="#contacts" aria-label="Запитати про Карпати">↗</a></td></tr>
+                <tr><td><span class="table-dot dot-orange"></span> Львів</td><td>Старе місто, дворики, кав'ярні</td><td>1–2 дні</td><td>Цінителі архітектури й смаків</td><td><a href="#contacts" aria-label="Запитати про Львів">↗</a></td></tr>
+                <tr><td><span class="table-dot dot-blue"></span> Поділля</td><td>Каньйон, фортеця, річка</td><td>2–3 дні</td><td>Шукачі незвичних краєвидів</td><td><a href="#contacts" aria-label="Запитати про Поділля">↗</a></td></tr>
+                <tr><td><span class="table-dot dot-yellow"></span> Полісся</td><td>Ліси, озера, тихі стежки</td><td>2–3 дні</td><td>Ті, кому потрібна тиша</td><td><a href="#contacts" aria-label="Запитати про Полісся">↗</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Маршрути й умови можуть змінюватися. Перевіряй актуальні рекомендації та правила безпеки перед поїздкою.</p>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="container">
+          <div class="section-header section-header-row">
+            <div><span class="eyebrow"><span></span> Лови момент</span><h2>Україна у <em>кадрах.</em></h2></div>
+            <p>Тут кожен краєвид — запрошення побачити більше.</p>
+          </div>
+          <div class="gallery-grid">
+            <button class="gallery-item gallery-tall" type="button" data-full="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=90" aria-label="Відкрити зображення гірського озера"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Гірське озеро на світанку" loading="lazy" /><span>01 / РАНОК У ГОРАХ ↗</span></button>
+            <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=90" aria-label="Відкрити зображення гірських вершин"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Вершини, що здіймаються над хмарами" loading="lazy" /><span>02 / ВИЩЕ ХМАР ↗</span></button>
+            <button class="gallery-item" type="button" data-full="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1800&q=90" aria-label="Відкрити зображення світанку над полем"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=80" alt="Теплий світанок над полем" loading="lazy" /><span>03 / НОВИЙ ДЕНЬ ↗</span></button>
+            <button class="gallery-item gallery-wide" type="button" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=90" aria-label="Відкрити зображення гірського озера серед лісу"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Синє гірське озеро серед лісу" loading="lazy" /><span>04 / ТАМ, ДЕ ТИХО ↗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline" id="timeline">
+        <div class="container">
+          <div class="section-header section-header-row">
+            <div><span class="eyebrow"><span></span> Наша мандрівка</span><h2>Історія у <em>русі.</em></h2></div>
+            <p>Маленька ідея, яка виросла у велику любов до подорожей.</p>
+          </div>
+          <div class="timeline-container">
+            <article class="timeline-item"><span class="timeline-year">2021</span><div class="timeline-dot"></div><div><h3>Перша нотатка</h3><p>Зібрали улюблені маршрути в один список — для друзів і близьких.</p></div></article>
+            <article class="timeline-item"><span class="timeline-year">2022</span><div class="timeline-dot"></div><div><h3>Дорога ширшає</h3><p>Почали ділитися ідеями, які допомагають відкривати Україну поруч.</p></div></article>
+            <article class="timeline-item"><span class="timeline-year">2024</span><div class="timeline-dot"></div><div><h3>Більше історій</h3><p>До маршрутів додали голоси мандрівників, поради й нові напрямки.</p></div></article>
+            <article class="timeline-item"><span class="timeline-year">СЬОГОДНІ</span><div class="timeline-dot"></div><div><h3>Твоя черга</h3><p>Обирай маршрут, вирушай у дорогу й створюй власну історію.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="container faq-grid">
+          <div class="section-header">
+            <span class="eyebrow"><span></span> Перед стартом</span>
+            <h2>Запитання,<br /><em>які бувають.</em></h2>
+            <p>Не знайшов відповіді? <a class="inline-link" href="#contacts">Напиши нам</a> — радо підкажемо.</p>
+          </div>
+          <div class="faq-container">
+            <details class="faq-item"><summary>З чого почати планування подорожі?</summary><p>Визначся з часом і настроєм, обери напрямок та перевір актуальні умови дороги, погоду й доступність локацій.</p></details>
+            <details class="faq-item"><summary>Чи підійдуть маршрути для подорожі з дітьми?</summary><p>Багато міських і природних локацій підходять для сімей. Перед поїздкою оціни довжину маршруту, рельєф і зручність для вашої родини.</p></details>
+            <details class="faq-item"><summary>Що взяти із собою в гори?</summary><p>Зручне взуття, одяг шарами, воду, перекус, заряджений телефон і необхідні засоби безпеки. Перевір прогноз і правила маршруту.</p></details>
+            <details class="faq-item"><summary>Де перевіряти актуальні обмеження?</summary><p>Звертайся до офіційних повідомлень місцевої влади, рятувальників і адміністрацій природних територій. Не вирушай у закриті або небезпечні зони.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacts">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <span class="eyebrow eyebrow-light"><span></span> Є ідея для мандрівки?</span>
+            <h2>Давай знайдемо<br /><em>твій маршрут.</em></h2>
+            <p>Розкажи, про що мрієш, — і ми поділимось ідеями для наступної подорожі.</p>
+            <a class="contact-email" href="mailto:hello@mandruy.example">hello@mandruy.example <span>↗</span></a>
+            <span class="contact-small">Відповідаємо з понеділка по п'ятницю</span>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label for="contactName">Твоє ім'я</label>
+            <input type="text" id="contactName" name="name" placeholder="Як до тебе звертатись?" autocomplete="name" required />
+            <label for="contactEmail">Електронна пошта</label>
+            <input type="email" id="contactEmail" name="email" placeholder="name@example.com" autocomplete="email" required />
+            <label for="contactMessage">Куди хочеш вирушити?</label>
+            <textarea id="contactMessage" name="message" rows="3" placeholder="Розкажи про свою ідею..." required></textarea>
+            <button class="button button-primary" type="submit">Надіслати повідомлення <span aria-hidden="true">↗</span></button>
+            <p class="form-feedback" id="contactFeedback" role="status" aria-live="polite"></p>
+            <p class="form-disclaimer">Демо-форма: повідомлення не надсилається на сервер.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section newsletter">
+        <div class="container newsletter-content">
+          <div><span class="eyebrow"><span></span> Листи з дороги</span><h2>Натхнення — <em>просто у пошті.</em></h2><p>Ідеї для мандрівок, добірки місць і трохи сонця у твоїй скриньці.</p></div>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <label class="visually-hidden" for="newsletterEmail">Твоя електронна пошта</label>
+            <div class="newsletter-input"><input type="email" id="newsletterEmail" name="email" placeholder="Твоя електронна пошта" autocomplete="email" required /><button type="submit" aria-label="Підписатися">↗</button></div>
+            <p class="form-feedback" id="newsletterFeedback" role="status" aria-live="polite"></p>
+            <small>Жодного спаму. Лише листи, що надихають.</small>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Перегляд зображення">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Закрити зображення">×</button>
+      <img class="lightbox-content" id="lightboxImg" alt="" />
+    </div>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Повернутися нагору">↑</button>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand"><a href="#home" class="logo"><span class="logo-mark" aria-hidden="true">м.</span><span>мандруй<span class="logo-accent">.</span></span></a><p>З любов'ю до доріг,<br />які ведуть додому.</p></div>
+          <div class="footer-column"><h2>Досліджуй</h2><a href="#categories">Напрямки</a><a href="#information">Планування</a><a href="#gallery">Галерея</a></div>
+          <div class="footer-column"><h2>Знайомся</h2><a href="#about">Про нас</a><a href="#timeline">Наша історія</a><a href="#contacts">Контакти</a></div>
+          <div class="footer-column"><h2>Будь на зв'язку</h2><a href="mailto:hello@mandruy.example">Електронна пошта ↗</a><span>Україна, з любов'ю</span></div>
+        </div>
+        <div class="footer-bottom"><span>© 2025 Мандруй Україною. Усі права захищено.</span><a href="#home">Зроблено з любов'ю до України <span>♥</span></a></div>
+      </div>
+    </footer>
+  </body>
+</html>
